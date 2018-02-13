@@ -9,7 +9,7 @@ cosTheta = (1/2)*( trace(R) - 1 );
 
 theta = acos(cosTheta);
 
-nSkew = (1/ (2*sin(theta)) )*(R' - R);
+nSkew = (1/ (2*sin(theta)) )*(R - R');
 
 n = [nSkew(3,2); nSkew(1,3); nSkew(2,1)];
 

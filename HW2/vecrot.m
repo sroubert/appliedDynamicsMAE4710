@@ -20,7 +20,7 @@ rp = rp.';
                  n(3) 0   -n(1);
                  -n(2)  n(1)   0];
              
-        R = n*n' + cos(theta)*(eye(3) - n*n') - sin(theta)*skewSym;
+        R = n*n' + cos(theta)*(eye(3) - n*n') + sin(theta)*skewSym
         
         
         
