@@ -10,17 +10,17 @@ n = n/norm(n);
 
 rp = rotmat(n,theta)*r;
 
-rp = rp';
+rp = rp.';
 
     function R = rotmat(n,theta)
         %this function returns R, the rotation matrix when going theta
-        %degrees about the n axis
+        %degrees about the n axiste
         %n is 3x1 unit normal
         skewSym = [ 0 -n(3) n(2);
                  n(3) 0   -n(1);
                  -n(2)  n(1)   0];
              
-        R = n*n' + cos(theta)*(eye(3) - n*n') + sin(theta)*skewSym
+        R = n*n' + cos(theta)*(eye(3) - n*n') - sin(theta)*skewSym;
         
         
         
